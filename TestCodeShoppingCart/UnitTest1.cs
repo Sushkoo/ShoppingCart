@@ -56,7 +56,7 @@ namespace TestCodeShoppingCart
             Assert.Throws<InvalidOperationException>(() => cart.RemoveProduct("Alma"));
         }
 
-        /*
+        
         [Fact]
         public void GetProducts_ReturnsCorrectProducts()
         {
@@ -73,6 +73,6 @@ namespace TestCodeShoppingCart
             Assert.Contains(products, p => p.Name == "Alma" && p.Price == 1.5);
             Assert.Contains(products, p => p.Name == "Banán" && p.Price == 2.0);
         }
-        */
+        
     }
 }

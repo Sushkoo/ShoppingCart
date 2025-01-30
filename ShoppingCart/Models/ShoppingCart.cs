@@ -20,16 +20,10 @@ namespace ShoppingCartProject.Models
             _products.Add(product);
         }
 
-        public object GetProducts()
+        public List<Product> GetProducts()
         {
-            List<Product> productok = new List<Product>();
 
-            for (int i = 0; i < _products.Count; i++)
-            {
-                productok.Add(_products[i]);
-            }
-
-            return productok; 
+            return _products; 
         }
 
         public double GetTotalPrice()
@@ -74,8 +68,11 @@ namespace ShoppingCartProject.Models
             }
             
         }
+    }
+
+         
 
         //TODO Készítse el a ShoppingCart osztályban azokat a metódusokat, amelyekkel sikeresen lefutnak a tesztesetek!
 
     }
-}
+
